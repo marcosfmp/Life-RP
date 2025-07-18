@@ -53,52 +53,7 @@ nav .youtube:hover { background: #cc0000; }
   border-radius: 14px;
   box-shadow: 0 5px 28px rgba(0,0,0,0.17);
   padding: 2rem;
-}
-
-.galeria {
-  max-width: 900px;
-  margin: 3rem auto;
-  text-align: center;
-  background: rgba(255,255,255,0.85);
-  border-radius: 14px;
-  box-shadow: 0 5px 28px rgba(0,0,0,0.16);
-  padding: 2rem;
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
-.image-card {
-  opacity: 0;
-  transform: scale(0.7) translateY(30px);
-  transition: all 0.7s cubic-bezier(.68,-0.55,.27,1.55);
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 12px rgba(0,0,0,0.12);
-  padding: 1rem;
-}
-.image-card.active {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-}
-
-.image-card img {
-  max-width: 180px;
-  border-radius: 10px;
-  margin-bottom: 0.5rem;
-  background: #eee;
-}
-
-.image-card .caption {
-  font-size: 1rem;
-  color: #2c2c2c;
-}
-
+  
 #verMais {
   margin-top: 2rem;
   padding: 0.8rem 2.2rem;
