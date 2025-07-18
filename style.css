@@ -1,125 +1,51 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  color: #fff;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
   min-height: 100vh;
 }
-header {
-  background: rgba(30,30,30,0.95);
-  padding: 32px 0 16px 0;
+
+/* Fundo animado com gradiente */
+.bg-animation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: gradientMove 10s infinite linear;
+  background: linear-gradient(270deg, #00c3ff, #ffff1c, #ff00da, #00ffad, #ff3c00);
+  background-size: 800% 800%;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.content {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  box-shadow: 0 2px 8px #0005;
+  margin-top: 80px;
 }
-header img {
-  width: 80px;
-  margin-bottom: 8px;
-}
-h1 {
-  font-size: 2.5rem;
-  margin: 0 0 8px 0;
-  letter-spacing: 2px;
-  color: #ffdc5e;
-  text-shadow: 0 2px 8px #0007;
-}
-.discord-btn {
-  display: inline-block;
-  margin: 24px auto 0 auto;
-  padding: 16px 32px;
-  background: linear-gradient(90deg, #7289da 60%, #5865f2 100%);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 32px;
-  box-shadow: 0 4px 16px #5865f299;
-  cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
-  text-decoration: none;
-}
-.discord-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 32px #5865f2cc;
-}
-.painel {
-  max-width: 1100px;
-  margin: 40px auto;
-  background: rgba(40,40,40,0.97);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px #0008;
-  padding: 32px 24px;
+
+#imageContainer {
+  margin-top: 30px;
   display: flex;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 32px;
-  align-items: flex-start;
-  justify-content: space-between;
 }
-.painel-info {
-  flex: 2 1 340px;
-  min-width: 320px;
+
+.image-appear {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }
-.painel-info h2 {
-  color: #ffdc5e;
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-.painel-info p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
-.painel-visual {
-  flex: 1 1 260px;
-  min-width: 220px;
-  text-align: center;
-}
-.roblox-figures {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 18px;
-}
-.roblox-figures img {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 2px 8px #0005;
-  object-fit: cover;
-}
-.roleplay-items {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-.roleplay-items img {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 1px 4px #0004;
-  object-fit: cover;
-}
-.youtube-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #ff4e4e;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-.youtube-link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-@media (max-width: 900px) {
-  .painel {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .painel-visual {
-    margin-top: 24px;
-  }
+
+.image-appear.active {
+  opacity: 1;
+  transform: scale(1);
 }
