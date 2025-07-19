@@ -1,4 +1,4 @@
-## LIFE RP
+# LIFE RP
 
 🎭 **LIFE RP — Onde histórias nascem. Onde conexões acontecem.**
 
@@ -27,9 +27,9 @@ Ao longo do caminho, enfrentamos raids, conflitos e momentos difíceis, mas o LI
 
 ## 🔗 Links Importantes
 
-- [Servidor LIFE RP no Discord] (https://discord.gg/QvJBsAMyCH)
+- [Servidor LIFE RP no Discord](https://discord.gg/QvJBsAMyCH)
 - [Canal do Marcosfmp no YouTube](https://www.youtube.com/@marcosfmp)
 
-
+---
 
 > **LIFE RP** — Onde histórias nascem. Onde conexões acontecem.
