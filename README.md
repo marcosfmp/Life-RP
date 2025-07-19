@@ -27,25 +27,9 @@ Ao longo do caminho, enfrentamos raids, conflitos e momentos difíceis, mas o LI
 
 ## 🔗 Links Importantes
 
-- [Servidor LIFE RP no Discord](https://discord.gg/Tea34TazX2)
+- [Servidor LIFE RP no Discord] (https://discord.gg/QvJBsAMyCH)
 - [Canal do Marcosfmp no YouTube](https://www.youtube.com/@marcosfmp)
 
----
 
-## 📸 Imagens do LIFE RP
-
-Imagem 1:
-![image1](image1)
-
-Imagem 2:
-![image2](image2)
-
-Imagem 3:
-![image3](image3)
-
-Imagem 4:
-![image4](image4)
-
----
 
 > **LIFE RP** — Onde histórias nascem. Onde conexões acontecem.
